@@ -1,33 +1,62 @@
-Backend:
-Rode yarn para instalar as dependências;
+<h1 align="center">
+    <img alt="Plathanus" title="#Plathanus" src="https://plathanus.com.br/img/website/logo.png" />
+</h1>
 
-Crie um banco de dados no postgres com o nome que desejar .env;
+<h4 align="center">
+	🚀 Desafio React Native plathanus(backend)
+</h4>
 
-Renomeie o arquivo .env.example para .env;
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/guivalerioS/challengePlathanusBackend?color=%2304D361">
 
-Coloque as suas credenciais dentro do .env;
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/guivalerioS/challengePlathanusBackend">
 
-Rode yarn sequelize db:migrate para executar as migrations;
+</p>
 
-Rode yarn dev para iniciar o servidor.
+## 🛠 Tecnologias
 
-comandos docker:
-para o postgres(BD princical) : docker run --name database -e POSTGRES_PASSWORD=password_example -p 5432:5432 -d postgres
+Principais ferramentas utilizadas na construção do backend:
 
-mongo(notificações) : docker run --name mongo -p 21017:27017 -d -t mongo
+- Axios
+- Express
+- Sequelize
+- JWT
+- MariaDB
+- Node JS
+- Twilio
+- Yup
 
-redis(fila de email) : docker run --name redis -p 6379:6379 -d -t redis:alpine
 
+## 🚀 Como executar o projeto
 
-Frontend:
-Rode yarn para instalar as dependências;
+### Pré-requisitos
 
-Windows: yarn react-native run-android;
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- NodeJS
+- Docker
+- Yarn
 
-servidor provisório:
+Agora para iniciarmos o projeto, siga os seguintes passos:
 
-yarn add global json-server
+```bash
+# Clone este repositório
+$ git clone https://github.com/guivalerioS/challengePlathanusBackend.git
 
-dentro do /frontend:
+# Instale as dependências e importe as migrations
+$ yarn
 
-json-server --host seuip -p 4444 -w server.json
+# Inicie um novo container docker do banco mariaDB 
+$docker run --name plathanusDB -e MYSQL_ROOT_PASSWORD=examplepass -e MYSQL_DATABASE=db -p 3306:3306 -d mariadb:latest
+
+#Renomeie o arquivo .env.example para .env
+Substitua as variáveis com as suas credenciais.
+
+# Rode as Migrations
+$ yarn sequelize db:migrate
+
+# e para executar:
+$ yarn dev
+
+```
+
+Feito com ❤️ por Guilherme Valerio 👋🏽 [Entre em contato!](https://www.linkedin.com/in/guilherme-valerio-399718143/)
