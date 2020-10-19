@@ -46,7 +46,7 @@ $ git clone https://github.com/guivalerioS/challengePlathanusBackend.git
 $ yarn
 
 # Inicie um novo container docker do banco mariaDB 
-$docker run --name plathanusDB -e MYSQL_ROOT_PASSWORD=examplepass -e MYSQL_DATABASE=db -p 3306:3306 -d mariadb:latest
+$ docker run --name plathanusDB -e MYSQL_ROOT_PASSWORD=examplepass -e MYSQL_DATABASE=db -p 3306:3306 -d mariadb:latest
 
 #Renomeie o arquivo .env.example para .env
 Substitua as variáveis com as suas credenciais.
