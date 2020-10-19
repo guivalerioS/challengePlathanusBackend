@@ -42,7 +42,7 @@ Agora para iniciarmos o projeto, siga os seguintes passos:
 # Clone este repositório
 $ git clone https://github.com/guivalerioS/challengePlathanusBackend.git
 
-# Instale as dependências
+# Entre na pasta do projeto e instale as dependências
 $ yarn
 
 # Inicie um novo container docker do banco mariaDB 
