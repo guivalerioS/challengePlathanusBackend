@@ -11,11 +11,11 @@ class UserController {
     const userEmailExists = await User.findOne({ where: { email } });
     const userTelephoneExists = await User.findOne({ where: { telephone_number } });
     if (userEmailExists) {
-      return res.status(400).json({ error: 'User email already exists.' });
+      return res.status(400).json({error: 'User email already exists.'});
     }
 
     if (userTelephoneExists) {
-      return res.status(400).json({ error: 'User telephone already exists.' });
+      return res.status(400).json({error: 'User telephone already exists.'});
     }
 
     try {
