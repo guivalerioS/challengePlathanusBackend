@@ -20,8 +20,7 @@ router.post('/verifySms', verifySmsValidator, UserController.verifySms);
 
 
 router.put(
-  '/users/:user_id',
-  authMiddleware,
+  '/users',
   updateValidator,
   UserController.update
 );
