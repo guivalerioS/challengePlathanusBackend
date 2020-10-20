@@ -17,9 +17,11 @@
 
 Principais ferramentas utilizadas na construção do backend:
 
+- Docker
+- NodeJS
 - Axios
 - Express
-- Sequelize
+- Sequelize(migrations)
 - JWT
 - MariaDB
 - Node JS
